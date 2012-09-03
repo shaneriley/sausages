@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <title>Sausages!</title>
+    <meta charset='UTF-8' />
+    <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <section>
+      <a href="javascript:(function(){var b=document.createElement(&quot;img&quot;),a=document.createElement(&quot;audio&quot;),src=document.createElement(&quot;source&quot;),ctx=document.createElement(&quot;canvas&quot;).getContext(&quot;2d&quot;),m=document.createElement(&quot;canvas&quot;).getContext(&quot;2d&quot;),w=240,h,frames,frame=0;var c=function(){ctx.clearRect(0,0,w,h);ctx.drawImage(b,-(frame*w),0);if(++frame&lt;frames){setTimeout(c,1000/24)}else{ctx.canvas.parentElement.removeChild(ctx.canvas)}};a.setAttribute(&quot;autoplay&quot;,true);a.src=&quot;audio/sausages.mp3&quot;;b.src=&quot;images/sausages.png&quot;;b.onload=function(){ctx.canvas.width=w;ctx.canvas.height=h=b.height;frames=b.width/w;c()};document.body.appendChild(ctx.canvas);ctx.canvas.style.cssText=&quot;position: fixed; left: &quot;+((window.innerWidth-w)/2)+&quot;px; top: 0; z-index: 10000000;&quot;})();">Get the bookmarklet!</a>
+    </section>
+  </body>
+</html>

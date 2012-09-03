@@ -1,0 +1,5 @@
+/* line 1, application.css.sass */
+video {
+  position: absolute;
+  left: -2000px;
+  z-index: 1; }
