@@ -1,1 +1,14 @@
-= link_to "Get the bookmarklet!", 'javascript:(function(){var b=document.createElement("img"),a=document.createElement("audio"),src=document.createElement("source"),ctx=document.createElement("canvas").getContext("2d"),m=document.createElement("canvas").getContext("2d"),w=240,h,frames,frame=0;var c=function(){ctx.clearRect(0,0,w,h);ctx.drawImage(b,-(frame*w),0);if(++frame<frames){setTimeout(c,1000/24)}else{ctx.canvas.parentElement.removeChild(ctx.canvas)}};a.setAttribute("autoplay",true);a.src="audio/sausages.mp3";b.src="images/sausages.png";b.onload=function(){ctx.canvas.width=w;ctx.canvas.height=h=b.height;frames=b.width/w;c()};document.body.appendChild(ctx.canvas);ctx.canvas.style.cssText="position: fixed; left: "+((window.innerWidth-w)/2)+"px; top: 0; z-index: 10000000;"})();'
+%h1 Sausages!
+%p
+  Don't get the reference? Watch
+  = link_to "this Old Spice video", "http://vimeo.com/47875656"
+  and wait until the music player loads at the end to make your own "muscle music". Press the A key in the music player and you'll understand!
+%p
+  Get the bookmarklet:
+  = link_to "Sausages!", 'javascript:(function(){var p="https://github.com/shaneriley/sausages/raw/master/source/",b=document.createElement("img"),a=document.createElement("audio"),src=document.createElement("source"),ctx=document.createElement("canvas").getContext("2d"),m=document.createElement("canvas").getContext("2d"),w=240,h,frames,frame=0;var c=function(){ctx.clearRect(0,0,w,h);ctx.drawImage(b,-(frame*w),0);if(++frame&lt;frames){setTimeout(c,1000/24)}else{ctx.canvas.parentElement.removeChild(ctx.canvas)}};a.setAttribute("autoplay",true);a.src=p+"audio/sausages.mp3";b.src=p+"images/sausages.png";b.onload=function(){ctx.canvas.width=w;ctx.canvas.height=h=b.height;frames=b.width/w;c()};document.body.appendChild(ctx.canvas);ctx.canvas.style.cssText="position: fixed; left: "+((window.innerWidth-w)/2)+"px; top: 0; z-index: 10000000;"})();'
+%p Drag the link above to your bookmarks bar, then run the bookmarklet on any site needing more sausages!
+%p
+  Made by #{link_to "Shane Riley", "/"}, front-end developer for
+  = link_to "Hashrocket", "http://hashrocket.com"
+%p.copy
+  %small Image and audio &copy; 2012 Old Spice, a division of Procter &amp; Gamble

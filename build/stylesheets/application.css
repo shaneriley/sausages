@@ -1,5 +1,41 @@
 /* line 1, application.css.sass */
-video {
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #242424;
+  background: #a20c0b url("../images/bg_body.png") repeat; }
+
+/* line 5, application.css.sass */
+a {
+  color: #a20c0b; }
+
+/* line 8, application.css.sass */
+section {
   position: absolute;
-  left: -2000px;
-  z-index: 1; }
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  width: 800px;
+  padding: 20px;
+  margin: 0 0 0 -420px;
+  background: white; }
+
+/* line 19, application.css.sass */
+h1 {
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+/* line 23, application.css.sass */
+p {
+  padding: 20px 0 0 0;
+  margin: 0; }
+  /* line 26, application.css.sass */
+  p.copy {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1; }
+    /* line 31, application.css.sass */
+    p.copy small {
+      font-size: 10px;
+      color: #666666; }

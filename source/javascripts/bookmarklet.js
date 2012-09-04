@@ -1,5 +1,6 @@
 (function() {
-  var img = document.createElement("img"),
+  var p = "https://github.com/shaneriley/sausages/raw/master/source/",
+      img = document.createElement("img"),
       a = document.createElement("audio"),
       src = document.createElement("source"),
       ctx = document.createElement("canvas").getContext("2d"),
